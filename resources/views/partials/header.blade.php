@@ -5,7 +5,7 @@
         <ul>
             <li>
                 @foreach ( $nav as $link)
-                    <a class=" text-uppercase {{ Route::currentRouteName() === 'home'? 'active' : '' }}" href="{{route('home')}}">{{$link}}</a>
+                    <a class=" text-uppercase {{ Route::currentRouteName() =='home'? 'active' : '' }}" href="{{route('home')}}">{{$link}}</a>
 
                 </li>
                 @endforeach
